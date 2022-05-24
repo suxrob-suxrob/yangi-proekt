@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import NavBar from './Component/NavBar/NavBar';
+import Demo from './Component/Pages/Demo';
+import Home from './Component/Pages/Home';
+import KeyFeader from './Component/Pages/KeyFeader';
+import Proding from './Component/Pages/Proding';
+import Testimonis from './Component/Pages/Testimonis';
+// import HeaderPointer from './Component/HeaderPointer/HeaderPointer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <NavBar />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/features" element={< KeyFeader />} />
+        <Route path="/pricing" element={<Proding />} />
+        <Route path="/testimoniales" element={<Testimonis />} />
+        <Route path="/demo" element={<Demo />} />
+      </Routes>
     </div>
   );
 }
