@@ -24,16 +24,29 @@ const NavBar = () => {
     }
      return (
          <nav>
-             <div className="logo">
-                 <img src={Pointer} alt="" />
+             <div className="container-sm">
+                    <div className="logo">
+                        <img src={Pointer} alt="" />
+                    </div>
+                    <div className="sel">
+                        <div>
+                        <select className="form-select form-select-lg mb-1" aria-label=".form-select-lg example">
+                             <option className="op" value="1">Uz</option> 
+                             <option className="op" value="1">Ru</option>  
+                             <option className="op" value="2">En</option>
+                        </select>
+                        </div>
+                        
+                           <div className="menu-icon" onClick={handleClick}>
+                               <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+                           </div>
+                    </div>
+                    
+                    
+                    <div className="Mobile" onClick={closeMobile}>
+                        <ul className={clicked ?"menyu-list" : "menyu-list close" }>{menyuList}</ul>
+                    </div>
              </div>
-             <div className="menu-icon" onClick={handleClick}>
-                 <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
-             </div>
-             <div className="Mobile" onClick={closeMobile}>
-                <ul className={clicked ?"menyu-list" : "menyu-list close" }>{menyuList}</ul>
-             </div>
-             
          </nav>
      );
 };

@@ -1,7 +1,7 @@
 export const MenyuList = [
     {
         title:"Home",
-        url:"/"
+        url:"/",
     },
     {
         title:"Key Features",

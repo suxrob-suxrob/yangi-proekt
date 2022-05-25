@@ -1,0 +1,102 @@
+.container-fluid {
+    .spa {
+        span {
+            height: 4497px;
+            width: 301px;
+            left: 107px;
+            top: 0;
+            color: Gray;
+            border: 1px solid;
+            z-index: 9999999;
+            position: absolute;
+
+        }
+    }
+    .sp {
+        span {
+            height: 4497px;
+            width: 600px;
+            left: 107px;
+            top: 0;
+            color: Gray;
+            border: 1px solid;
+            z-index: 99999;
+            position: absolute;
+        }
+    }
+    .sb {
+        span {
+            height: 4497px;
+            width: 800px;
+            left: 107px;
+            top: 0;
+            color: Gray;
+            border: 1px solid;
+            z-index: 999999;
+            position: absolute;
+        }
+    }
+    .sc {
+        span {
+            height: 4497px;
+            width: 1000px;
+            left: 107px;
+            top: 0;
+            color: Gray;
+            border: 1px solid;
+            z-index: 9999;
+            position: absolute;
+        }
+    }
+    width: 100%;
+    max-width: 1066px;
+    padding-top: 165px;
+    .Pointer-it {
+        .res {
+            h1 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: #01D8D0;
+            }
+            h1:last-child {
+                color: #fff;
+                margin-bottom: 47px;
+            }
+        }
+        .gow {
+            p {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 120%;
+                color: #E0E0E0;
+            };
+        }
+        .btn {
+            margin-left: -11px;
+            button {
+                // cursor: pointer;
+                width: 240px;
+                height: 60px;
+                background: #FEFEFE;
+                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3), 0px 0px 40px rgba(255, 255, 255, 0.3);
+                border: 1px solid #fff;
+                border-radius: 35px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+                color: #373737;
+    
+            }
+            
+        }
+
+    }
+}
