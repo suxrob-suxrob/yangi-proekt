@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="container">
        <NavBar />
-       {/* <Home /> */}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/features" element={< KeyFeader />} />
